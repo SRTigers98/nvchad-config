@@ -5,6 +5,9 @@ require("formatter").setup {
     lua = {
       require("formatter.filetypes.lua").stylua,
     },
+    sh = {
+      require("formatter.filetypes.sh").shfmt,
+    },
     ["*"] = {
       require("formatter.filetypes.any").remove_trailing_whitespace,
     },
