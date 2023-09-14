@@ -7,22 +7,31 @@ local plugins = {
         "vim",
         "lua",
         -- text
-        "markdown"
-      }
-    }
+        "markdown",
+        "json",
+        "json5",
+        "xml",
+        "yaml",
+        -- programming
+        -- scripting
+        "bash",
+        -- vcs
+        "gitignore",
+      },
+    },
   },
   {
     "neovim/nvim-lspconfig",
     dependencies = {
       "mhartington/formatter.nvim",
-      config = function ()
-        require("custom.configs.formatter")
-      end
+      config = function()
+        require "custom.configs.formatter"
+      end,
     },
-    config = function ()
-      require("plugins.configs.lspconfig")
-      require("custom.configs.lspconfig")
-    end
+    config = function()
+      require "plugins.configs.lspconfig"
+      require "custom.configs.lspconfig"
+    end,
   },
 }
 
