@@ -23,10 +23,18 @@ local plugins = {
   {
     "neovim/nvim-lspconfig",
     dependencies = {
-      "mhartington/formatter.nvim",
-      config = function()
-        require "custom.configs.formatter"
-      end,
+      {
+        "mhartington/formatter.nvim",
+        config = function()
+          require "custom.configs.formatter"
+        end,
+      },
+      {
+        "mfussenegger/nvim-lint",
+        config = function()
+          require "custom.configs.lint"
+        end,
+      },
     },
     config = function()
       require "plugins.configs.lspconfig"
