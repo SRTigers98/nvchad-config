@@ -2,7 +2,8 @@ local M = {}
 
 M.formatter = {
   n = {
-    ["<leader>f"] = { ":FormatWrite <CR>", "Format File" },
+    -- Formatter mappings
+    -- ["<leader>f"] = { ":FormatWrite <CR>", "Format File" },
   },
 }
 

@@ -26,6 +26,7 @@ local plugins = {
       "mhartington/formatter.nvim",
       config = function()
         require "custom.configs.formatter"
+        vim.cmd "source configs/formatter.vim"
       end,
     },
     config = function()
