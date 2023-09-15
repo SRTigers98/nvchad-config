@@ -2,6 +2,9 @@ require("formatter").setup {
   logging = true,
   log_level = vim.log.levels.WARN,
   filetype = {
+    go = {
+      require("formatter.filetypes.go").gofmt,
+    },
     lua = {
       require("formatter.filetypes.lua").stylua,
     },

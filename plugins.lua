@@ -13,6 +13,10 @@ local plugins = {
         "xml",
         "yaml",
         -- programming
+        "go",
+        -- tools
+        "gomod",
+        "gosum",
         -- scripting
         "bash",
         -- vcs
