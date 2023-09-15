@@ -12,6 +12,9 @@ local plugins = {
         "json5",
         "xml",
         "yaml",
+        -- tex
+        "bibtex",
+        "latex",
         -- programming
         "go",
         -- tools

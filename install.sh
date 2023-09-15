@@ -2,6 +2,8 @@
 
 # Required packages
 packages=(
+  # LaTeX
+  "texlab"
   # Lua
   "stylua"
   "luacheck"
