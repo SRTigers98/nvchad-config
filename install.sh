@@ -23,8 +23,15 @@ for pck in "${packages[@]}"; do
 done
 
 # Go packages
-if go --help &>/dev/null; then
-  echo "Go isn't installed, skipping packages"
-else
+if go help &>/dev/null; then
   go install golang.org/x/tools/gopls@latest
+else
+  echo "Go isn't installed, skipping packages"
+fi
+
+# latexindent
+if podman --help &>/dev/null; then
+  podman pull ghcr.io/cmhughes/latexindent.pl
+else
+  echo "Podman isn't installed, skipping latexindent"
 fi
