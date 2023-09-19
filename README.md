@@ -19,8 +19,8 @@
 
 - golang.org/x/tools/gopls
 
-### Docker images
+### Podman images
 
-> docker pull *image*:latest
+> podman pull *image*:latest
 
 - ghcr.io/cmhughes/latexindent.pl
