@@ -15,12 +15,12 @@
 
 ### Go packages
 
-> go install <package>@latest
+> go install *package*@latest
 
 - golang.org/x/tools/gopls
 
 ### Docker images
 
-> docker pull <image>
+> docker pull *image*:latest
 
 - ghcr.io/cmhughes/latexindent.pl
