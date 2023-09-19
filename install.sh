@@ -10,6 +10,9 @@ packages=(
   # Shell
   "shfmt"
   "shellcheck"
+  # YAML
+  "yaml-language-server"
+  "yamllint"
 )
 
 # Install packages
