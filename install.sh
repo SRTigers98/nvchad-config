@@ -13,6 +13,8 @@ packages=(
   # YAML
   "yaml-language-server"
   "yamllint"
+  # Markdown
+  "prettier"
 )
 
 # Install packages
@@ -25,16 +27,18 @@ for pck in "${packages[@]}"; do
   fi
 done
 
-# Go packages
-if go help &>/dev/null; then
-  go install golang.org/x/tools/gopls@latest
-else
-  echo "Go isn't installed, skipping packages"
-fi
+if [ "$EUID" -ne 0 ]; then
+  # Go packages
+  if go help &>/dev/null; then
+    go install golang.org/x/tools/gopls@latest
+  else
+    echo "Go isn't installed, skipping packages"
+  fi
 
-# latexindent
-if podman --help &>/dev/null; then
-  podman pull ghcr.io/cmhughes/latexindent.pl
-else
-  echo "Podman isn't installed, skipping latexindent"
+  # latexindent
+  if podman --help &>/dev/null; then
+    podman pull ghcr.io/cmhughes/latexindent.pl:latest
+  else
+    echo "Podman isn't installed, skipping latexindent"
+  fi
 fi
