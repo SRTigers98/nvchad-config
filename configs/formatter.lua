@@ -10,6 +10,9 @@ require("formatter").setup {
     lua = {
       require("formatter.filetypes.lua").stylua,
     },
+    markdown = {
+      require("formatter.filetypes.markdown").prettier,
+    },
     sh = {
       require("formatter.filetypes.sh").shfmt,
     },
