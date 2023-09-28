@@ -3,7 +3,7 @@ local on_attach = configs.on_attach
 local capabilities = configs.capabilities
 
 local lspconfig = require "lspconfig"
-local servers = { "lua_ls", "gopls", "texlab", "yamlls" }
+local servers = { "lua_ls", "gopls", "texlab", "yamlls", "zls" }
 
 local yaml_settings = {
   yaml = {

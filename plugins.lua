@@ -17,6 +17,7 @@ local plugins = {
         "latex",
         -- programming
         "go",
+        "zig",
         -- tools
         "gomod",
         "gosum",
