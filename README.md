@@ -9,18 +9,17 @@
 - luacheck
 - shfmt
 - shellcheck
-- yaml-language-server
 - yamllint
 - prettier
 
 ### Go packages
 
-> go install *package*@latest
+> go install _package_@latest
 
 - golang.org/x/tools/gopls
 
 ### Podman images
 
-> podman pull *image*:latest
+> podman pull _image_:latest
 
 - ghcr.io/cmhughes/latexindent.pl

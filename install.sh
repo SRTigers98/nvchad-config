@@ -11,7 +11,6 @@ packages=(
   "shfmt"
   "shellcheck"
   # YAML
-  "yaml-language-server"
   "yamllint"
   # Markdown
   "prettier"
