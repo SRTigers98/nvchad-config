@@ -61,6 +61,12 @@ local plugins = {
   {
     "ziglang/zig.vim",
   },
+  {
+    "lervag/vimtex",
+    config = function()
+      vim.cmd "syntax enable"
+    end,
+  },
 }
 
 return plugins
