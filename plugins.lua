@@ -12,6 +12,7 @@ local plugins = {
         "json5",
         "xml",
         "yaml",
+        "toml",
         -- tex
         "bibtex",
         "latex",
