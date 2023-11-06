@@ -1,33 +1,7 @@
 local plugins = {
   {
     "nvim-treesitter/nvim-treesitter",
-    opts = {
-      ensure_installed = {
-        -- defaults
-        "vim",
-        "lua",
-        -- text
-        "markdown",
-        "json",
-        "json5",
-        "xml",
-        "yaml",
-        "toml",
-        -- tex
-        "bibtex",
-        "latex",
-        -- programming
-        "go",
-        "zig",
-        -- tools
-        "gomod",
-        "gosum",
-        -- scripting
-        "bash",
-        -- vcs
-        "gitignore",
-      },
-    },
+    opts = require("custom.configs.treesitter").opts,
   },
   {
     "neovim/nvim-lspconfig",
@@ -52,28 +26,7 @@ local plugins = {
   },
   {
     "williamboman/mason.nvim",
-    opts = {
-      ensure_installed = {
-        -- Lua
-        "stylua",
-        "luacheck",
-        -- Shell
-        "shfmt",
-        "shellcheck",
-        -- TeX
-        "texlab",
-        "latexindent",
-        -- YAML
-        "yaml-language-server",
-        "yamllint",
-        -- Go
-        "gopls",
-        -- Zig
-        "zls",
-        -- Prettier
-        "prettier",
-      },
-    },
+    opts = require("custom.configs.mason").opts,
   },
   {
     "ray-x/go.nvim",
