@@ -69,6 +69,19 @@ local plugins = {
   },
   -- Tooling
   {
+    "someone-stole-my-name/yaml-companion.nvim",
+    requires = {
+      { "neovim/nvim-lspconfig" },
+      { "nvim-lua/plenary.nvim" },
+      { "nvim-telescope/telescope.nvim" },
+    },
+    config = function()
+      require("telescope").load_extension "yaml_schema"
+      local cfg = require "custom.configs.yaml"
+      require("lspconfig")["yamlls"].setup(cfg)
+    end,
+  },
+  {
     "kylechui/nvim-surround",
     version = "*",
     event = "VeryLazy",

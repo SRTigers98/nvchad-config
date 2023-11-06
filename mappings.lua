@@ -8,4 +8,11 @@ M.spell = {
   },
 }
 
+-- YAML Companion
+M.yaml = {
+  n = {
+    ["<leader>ys"] = { ":Telescope yaml_schema<CR>", "Select YAML Schema" },
+  },
+}
+
 return M
