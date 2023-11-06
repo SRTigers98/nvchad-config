@@ -51,6 +51,31 @@ local plugins = {
     end,
   },
   {
+    "williamboman/mason.nvim",
+    opts = {
+      ensure_installed = {
+        -- Lua
+        "stylua",
+        "luacheck",
+        -- Shell
+        "shfmt",
+        "shellcheck",
+        -- TeX
+        "texlab",
+        "latexindent",
+        -- YAML
+        "yaml-language-server",
+        "yamllint",
+        -- Go
+        "gopls",
+        -- Zig
+        "zls",
+        -- Prettier
+        "prettier",
+      },
+    },
+  },
+  {
     "ray-x/go.nvim",
     config = function()
       require("go").setup()

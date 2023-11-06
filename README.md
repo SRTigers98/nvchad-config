@@ -2,25 +2,16 @@
 
 ## Required software
 
-> Install via package manger (e.g. pacman)
+> Installed via mason.nvim
 
-- texlab
 - stylua
 - luacheck
 - shfmt
 - shellcheck
+- texlab
+- latexindent
 - yaml-language-server
 - yamllint
+- gopls
+- zls
 - prettier
-
-### Go packages
-
-> go install *package*@latest
-
-- golang.org/x/tools/gopls
-
-### Podman images
-
-> podman pull *image*:latest
-
-- ghcr.io/cmhughes/latexindent.pl
