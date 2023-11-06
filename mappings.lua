@@ -1,9 +1,10 @@
 local M = {}
 
-M.formatter = {
+-- Spell Checking
+M.spell = {
   n = {
-    -- Formatter mappings
-    -- ["<leader>f"] = { ":FormatWrite <CR>", "Format File" },
+    ["<leader>sd"] = { ":setlocal spell spelllang=de_de<CR>", "German Spell Check" },
+    ["<leader>se"] = { ":setlocal spell spelllang=en_us<CR>", "English Spell Check" },
   },
 }
 
