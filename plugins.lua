@@ -67,6 +67,16 @@ local plugins = {
       vim.cmd "syntax enable"
     end,
   },
+  -- Tooling
+  {
+    "kylechui/nvim-surround",
+    version = "*",
+    event = "VeryLazy",
+  },
+  {
+    "f-person/git-blame.nvim",
+    event = "VeryLazy",
+  },
 }
 
 return plugins
