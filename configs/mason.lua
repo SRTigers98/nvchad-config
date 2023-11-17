@@ -18,6 +18,9 @@ M.opts = {
     "gopls",
     -- Zig
     "zls",
+    -- JavaScript & TypeScript
+    "typescript-language-server",
+    "eslint-lsp",
     -- Prettier
     "prettier",
   },
