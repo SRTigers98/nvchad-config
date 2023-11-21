@@ -17,24 +17,7 @@ require("formatter").setup {
       require("formatter.filetypes.sh").shfmt,
     },
     tex = {
-      function()
-        local file_path = util.escape_path(util.get_current_buffer_file_path())
-
-        return {
-          exe = "podman",
-          args = {
-            "run",
-            "--rm",
-            "-v",
-            file_path .. ":/tmp.tex",
-            "ghcr.io/cmhughes/latexindent.pl",
-            "-s",
-            "-w",
-            "tmp.tex",
-          },
-          no_append = true,
-        }
-      end,
+      require("formatter.filetypes.latex").latexindent,
     },
     yaml = {
       require("formatter.filetypes.yaml").prettier,
