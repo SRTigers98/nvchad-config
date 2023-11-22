@@ -20,6 +20,7 @@ M.opts = {
     -- Zig
     "zls",
     -- JavaScript & TypeScript
+    "typescript-language-server",
     "biome",
     -- Prettier
     "prettier",

@@ -12,3 +12,14 @@ for _, lsp in ipairs(servers) do
     capabilities = capabilities,
   }
 end
+
+-- TypeScript
+lspconfig.tsserver.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  init_options = {
+    preferences = {
+      disableSuggestions = true,
+    },
+  },
+}
