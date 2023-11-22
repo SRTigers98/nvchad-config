@@ -3,6 +3,7 @@ local M = {}
 M.opts = {
   ensure_installed = {
     -- Lua
+    "lua-language-server",
     "stylua",
     "luacheck",
     -- Shell
