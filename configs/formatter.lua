@@ -27,10 +27,13 @@ require("formatter").setup {
       require("formatter.filetypes.zig").zigfmt,
     },
     javascript = {
-      require("formatter.filetypes.javascript").prettier,
+      require("formatter.filetypes.javascript").biome,
     },
     typescript = {
-      require("formatter.filetypes.typescript").prettier,
+      require("formatter.filetypes.typescript").biome,
+    },
+    json = {
+      require("formatter.filetypes.json").biome,
     },
     ["*"] = {
       require("formatter.filetypes.any").remove_trailing_whitespace,

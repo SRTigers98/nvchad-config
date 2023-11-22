@@ -3,8 +3,8 @@ require("lint").linters_by_ft = {
   sh = { "shellcheck" },
   tex = { "lacheck" },
   yaml = { "yamllint" },
-  javascript = { "eslint" },
-  typescript = { "eslint" },
+  javascript = { "biomejs" },
+  typescript = { "biomejs" },
 }
 
 vim.api.nvim_create_autocmd({ "BufWritePost" }, {

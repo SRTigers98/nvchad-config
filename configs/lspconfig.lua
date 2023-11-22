@@ -3,7 +3,7 @@ local on_attach = configs.on_attach
 local capabilities = configs.capabilities
 
 local lspconfig = require "lspconfig"
-local servers = { "lua_ls", "gopls", "texlab", "yamlls", "zls" }
+local servers = { "biome", "lua_ls", "gopls", "texlab", "yamlls", "zls" }
 
 -- Generic
 for _, lsp in ipairs(servers) do
@@ -12,14 +12,3 @@ for _, lsp in ipairs(servers) do
     capabilities = capabilities,
   }
 end
-
--- TypeScript
-lspconfig.tsserver.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-  init_options = {
-    preferences = {
-      disableSuggestions = true,
-    },
-  },
-}
