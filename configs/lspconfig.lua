@@ -3,7 +3,7 @@ local on_attach = configs.on_attach
 local capabilities = configs.capabilities
 
 local lspconfig = require "lspconfig"
-local servers = { "biome", "lua_ls", "gopls", "texlab", "yamlls", "zls" }
+local servers = { "biome", "lua_ls", "gopls", "texlab", "yamlls", "zls", "jsonls" }
 
 -- Generic
 for _, lsp in ipairs(servers) do

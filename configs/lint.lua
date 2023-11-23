@@ -5,6 +5,7 @@ require("lint").linters_by_ft = {
   yaml = { "yamllint" },
   javascript = { "biomejs" },
   typescript = { "biomejs" },
+  json = { "biomejs" },
 }
 
 vim.api.nvim_create_autocmd({ "BufWritePost" }, {

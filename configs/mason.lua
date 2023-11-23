@@ -15,6 +15,8 @@ M.opts = {
     -- YAML
     "yaml-language-server",
     "yamllint",
+    -- JSON
+    "json-lsp",
     -- Go
     "gopls",
     -- Zig
