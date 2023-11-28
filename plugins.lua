@@ -72,6 +72,10 @@ local plugins = {
     "f-person/git-blame.nvim",
     event = "VeryLazy",
   },
+  {
+    "tpope/vim-fugitive",
+    event = "VeryLazy",
+  },
 }
 
 return plugins
