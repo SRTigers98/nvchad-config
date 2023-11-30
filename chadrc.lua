@@ -1,8 +1,16 @@
 ---@class ChadrcConfig
 local M = {}
 
-M.ui = { theme = "nord" }
+M.ui = {
+  theme = "nord",
+  statusline = {
+    theme = "minimal",
+    separator_style = "round",
+  },
+}
+
 M.plugins = "custom.plugins"
+
 M.mappings = require "custom.mappings"
 
 -- Overwrite disabled inbuilt plugins
