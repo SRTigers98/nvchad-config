@@ -1,8 +1,14 @@
 local plugins = {
+  -- Basic
   {
     "nvim-treesitter/nvim-treesitter",
     opts = require("custom.configs.treesitter").opts,
   },
+  {
+    "williamboman/mason.nvim",
+    opts = require("custom.configs.mason").opts,
+  },
+  -- Language Support
   {
     "neovim/nvim-lspconfig",
     dependencies = {
@@ -25,17 +31,15 @@ local plugins = {
     end,
   },
   {
-    "williamboman/mason.nvim",
-    opts = require("custom.configs.mason").opts,
-  },
-  {
-    "ray-x/go.nvim",
-    config = function()
-      require("go").setup()
+    "olexsmir/gopher.nvim",
+    ft = "go",
+    config = function(_, opts)
+      require("gopher").setup(opts)
+      require("core.utils").load_mappings "gopher"
     end,
-    event = { "CmdlineEnter" },
-    ft = { "go", "gomod" },
-    build = ":lua require('go.install').update_all_sync()",
+    build = function()
+      vim.cmd [[silent! GoInstallDeps]]
+    end,
   },
   {
     "ziglang/zig.vim",
