@@ -24,6 +24,10 @@ M.opts = {
     -- JavaScript & TypeScript
     "typescript-language-server",
     "biome",
+    -- Web
+    "html-lsp",
+    "css-lsp",
+    "htmx-lsp",
     -- Prettier
     "prettier",
   },
