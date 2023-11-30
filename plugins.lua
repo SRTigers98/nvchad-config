@@ -47,6 +47,23 @@ local plugins = {
     end,
   },
   -- Tooling
+  -- Git
+  {
+    "f-person/git-blame.nvim",
+    event = "VeryLazy",
+  },
+  {
+    "tpope/vim-fugitive",
+    event = "VeryLazy",
+  },
+  {
+    "aaronhallaert/advanced-git-search.nvim",
+    config = function()
+      require("telescope").load_extension "advanced_git_search"
+    end,
+    event = "VeryLazy",
+  },
+  -- Other
   {
     "someone-stole-my-name/yaml-companion.nvim",
     requires = {
@@ -67,14 +84,6 @@ local plugins = {
     config = function()
       require("nvim-surround").setup()
     end,
-  },
-  {
-    "f-person/git-blame.nvim",
-    event = "VeryLazy",
-  },
-  {
-    "tpope/vim-fugitive",
-    event = "VeryLazy",
   },
 }
 

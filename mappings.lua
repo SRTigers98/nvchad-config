@@ -20,6 +20,7 @@ M.yaml = {
 M.git = {
   n = {
     ["<leader>gr"] = { ":e<CR>:Gitsigns refresh<CR>:GitBlameToggle<CR>:GitBlameToggle<CR>", "Refresh Git" },
+    ["<leader>gs"] = { ":AdvancedGitSearch<CR>", "Git Advanced Search" },
   },
 }
 
