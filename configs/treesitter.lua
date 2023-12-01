@@ -21,6 +21,7 @@ M.opts = {
     "zig",
     "javascript",
     "typescript",
+    "elixir",
     -- web
     "html",
     "css",

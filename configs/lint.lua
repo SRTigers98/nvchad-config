@@ -6,6 +6,7 @@ require("lint").linters_by_ft = {
   javascript = { "biomejs" },
   typescript = { "biomejs" },
   json = { "biomejs" },
+  elixir = { "credo" },
 }
 
 vim.api.nvim_create_autocmd({ "BufWritePost" }, {

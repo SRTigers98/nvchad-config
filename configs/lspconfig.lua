@@ -3,7 +3,18 @@ local on_attach = configs.on_attach
 local capabilities = configs.capabilities
 
 local lspconfig = require "lspconfig"
-local servers = { "biome", "lua_ls", "gopls", "texlab", "yamlls", "zls", "jsonls", "html", "cssls", "htmx" }
+local servers = {
+  "biome",
+  "lua_ls",
+  "gopls",
+  "texlab",
+  "yamlls",
+  "zls",
+  "jsonls",
+  "html",
+  "cssls",
+  "htmx",
+}
 
 -- Generic
 for _, lsp in ipairs(servers) do
@@ -22,4 +33,11 @@ lspconfig.tsserver.setup {
       disableSuggestions = true,
     },
   },
+}
+
+-- Elixir
+lspconfig.elixirls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  cmd = { "/home/beeder/.local/share/nvim/mason/packages/elixir-ls/language_server.sh" },
 }

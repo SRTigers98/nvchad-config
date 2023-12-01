@@ -28,8 +28,10 @@ M.opts = {
     "html-lsp",
     "css-lsp",
     "htmx-lsp",
-    -- Prettier
+    -- Formatter
     "prettier",
+    -- Elixir
+    "elixir-ls",
   },
 }
 

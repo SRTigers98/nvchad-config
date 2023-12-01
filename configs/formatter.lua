@@ -35,6 +35,9 @@ require("formatter").setup {
     json = {
       require("formatter.filetypes.json").biome,
     },
+    elixir = {
+      require("formatter.filetypes.elixir").mixformat,
+    },
     ["*"] = {
       require("formatter.filetypes.any").remove_trailing_whitespace,
     },
