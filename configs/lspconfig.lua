@@ -39,5 +39,5 @@ lspconfig.tsserver.setup {
 lspconfig.elixirls.setup {
   on_attach = on_attach,
   capabilities = capabilities,
-  cmd = { "/home/beeder/.local/share/nvim/mason/packages/elixir-ls/language_server.sh" },
+  cmd = { vim.fn.expand "$HOME/.local/share/nvim/mason/packages/elixir-ls/language_server.sh" },
 }
