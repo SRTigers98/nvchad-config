@@ -14,6 +14,7 @@ local servers = {
   "html",
   "cssls",
   "htmx",
+  "autotools_ls",
 }
 
 -- Generic

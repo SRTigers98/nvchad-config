@@ -32,6 +32,8 @@ M.opts = {
     "prettier",
     -- Elixir
     "elixir-ls",
+    -- Make
+    "autotools-language-server",
   },
 }
 
