@@ -5,3 +5,6 @@ vim.cmd "set lcs+=space:·"
 -- set indentation
 vim.cmd "set expandtab"
 vim.cmd "set shiftwidth=2"
+
+-- filetypes
+require "custom.filetypes.helm"

@@ -34,6 +34,8 @@ M.opts = {
     "elixir-ls",
     -- Make
     "autotools-language-server",
+    -- Kubernetes
+    "helm-ls",
   },
 }
 

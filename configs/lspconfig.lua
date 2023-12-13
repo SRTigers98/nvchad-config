@@ -42,3 +42,10 @@ lspconfig.elixirls.setup {
   capabilities = capabilities,
   cmd = { vim.fn.expand "$HOME/.local/share/nvim/mason/packages/elixir-ls/language_server.sh" },
 }
+
+-- Helm
+lspconfig.helm_ls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = { "helm", "helm.yaml" },
+}
