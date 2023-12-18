@@ -80,6 +80,9 @@ local plugins = {
     end,
   },
   {
+    "b0o/schemastore.nvim",
+  },
+  {
     "kylechui/nvim-surround",
     version = "*",
     event = "VeryLazy",

@@ -9,7 +9,6 @@ local servers = {
   "gopls",
   "texlab",
   "zls",
-  "jsonls",
   "html",
   "cssls",
   "htmx",
@@ -52,3 +51,15 @@ lspconfig.helm_ls.setup {
 -- YAML
 local yaml_config = require "custom.configs.yaml"
 lspconfig.yamlls.setup(yaml_config)
+
+-- JSON
+lspconfig.jsonls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  settings = {
+    json = {
+      schemas = require("schemastore").json.schemas(),
+      validate = { enable = true },
+    },
+  },
+}
