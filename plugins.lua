@@ -77,8 +77,6 @@ local plugins = {
     },
     config = function()
       require("telescope").load_extension "yaml_schema"
-      local cfg = require "custom.configs.yaml"
-      require("lspconfig")["yamlls"].setup(cfg)
     end,
   },
   {

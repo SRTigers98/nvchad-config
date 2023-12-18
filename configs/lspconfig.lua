@@ -8,7 +8,6 @@ local servers = {
   "lua_ls",
   "gopls",
   "texlab",
-  "yamlls",
   "zls",
   "jsonls",
   "html",
@@ -49,3 +48,7 @@ lspconfig.helm_ls.setup {
   capabilities = capabilities,
   filetypes = { "helm", "helm.yaml" },
 }
+
+-- YAML
+local yaml_config = require "custom.configs.yaml"
+lspconfig.yamlls.setup(yaml_config)
