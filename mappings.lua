@@ -38,4 +38,12 @@ M.gopher = {
   },
 }
 
+-- Glow
+M.glow = {
+  plugin = true,
+  n = {
+    ["<leader>gl"] = { "<cmd>Glow<CR>", "Markdown Preview" },
+  },
+}
+
 return M

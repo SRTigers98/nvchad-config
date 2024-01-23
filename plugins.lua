@@ -96,8 +96,10 @@ local plugins = {
       require("glow").setup {
         height_ratio = 0.9,
       }
+      require("core.utils").load_mappings "glow"
     end,
     cmd = "Glow",
+    ft = "markdown",
   },
 }
 
