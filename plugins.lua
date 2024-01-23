@@ -90,6 +90,13 @@ local plugins = {
       require("nvim-surround").setup()
     end,
   },
+  {
+    "ellisonleao/glow.nvim",
+    config = function()
+      require("glow").setup()
+    end,
+    cmd = "Glow",
+  },
 }
 
 return plugins
