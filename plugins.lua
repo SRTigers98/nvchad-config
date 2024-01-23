@@ -93,7 +93,9 @@ local plugins = {
   {
     "ellisonleao/glow.nvim",
     config = function()
-      require("glow").setup()
+      require("glow").setup {
+        height_ratio = 0.9,
+      }
     end,
     cmd = "Glow",
   },
