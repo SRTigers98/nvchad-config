@@ -34,6 +34,13 @@ lspconfig.tsserver.setup {
   },
 }
 
+-- Vue
+lspconfig.volar.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue", "json" },
+}
+
 -- Elixir
 lspconfig.elixirls.setup {
   on_attach = on_attach,
