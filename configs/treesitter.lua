@@ -22,9 +22,12 @@ M.opts = {
     "javascript",
     "typescript",
     "elixir",
+    "rust",
     -- web
     "html",
     "css",
+    "svelte",
+    "vue",
     -- tools
     "gomod",
     "gosum",
@@ -34,6 +37,12 @@ M.opts = {
     "bash",
     -- vcs
     "gitignore",
+    -- database
+    "sql",
+    -- gRPC
+    "proto",
+    -- config
+    "ssh_config",
   },
 }
 
