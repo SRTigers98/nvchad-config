@@ -29,6 +29,7 @@ M.opts = {
     "css-lsp",
     "htmx-lsp",
     "vue-language-server",
+    "svelte-language-server",
     -- Formatter
     "prettier",
     -- Elixir

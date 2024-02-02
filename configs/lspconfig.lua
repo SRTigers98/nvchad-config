@@ -13,6 +13,7 @@ local servers = {
   "cssls",
   "htmx",
   "autotools_ls",
+  "svelte",
 }
 
 -- Generic
