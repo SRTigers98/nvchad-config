@@ -14,6 +14,8 @@ local servers = {
   "htmx",
   "autotools_ls",
   "svelte",
+  "dockerls",
+  "docker_compose_language_service",
 }
 
 -- Generic

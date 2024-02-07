@@ -36,8 +36,10 @@ M.opts = {
     "elixir-ls",
     -- Make
     "autotools-language-server",
-    -- Kubernetes
+    -- Container
     "helm-ls",
+    "dockerfile-language-server",
+    "docker-compose-language-service",
   },
 }
 
