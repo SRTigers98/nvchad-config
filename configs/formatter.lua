@@ -35,6 +35,12 @@ local filetypes = {
   elixir = {
     require("formatter.filetypes.elixir").mixformat,
   },
+  html = {
+    require("formatter.filetypes.html").prettier,
+  },
+  css = {
+    require("formatter.filetypes.css").prettier,
+  },
   svelte = {
     require("formatter.filetypes.svelte").prettier,
   },
