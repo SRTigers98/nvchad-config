@@ -40,6 +40,8 @@ M.opts = {
     "helm-ls",
     "dockerfile-language-server",
     "docker-compose-language-service",
+    -- TOML
+    "taplo",
   },
 }
 

@@ -41,6 +41,9 @@ local filetypes = {
   vue = {
     require("formatter.filetypes.vue").prettier,
   },
+  toml = {
+    require("formatter.filetypes.toml").taplo,
+  },
   ["*"] = {
     require("formatter.filetypes.any").remove_trailing_whitespace,
   },
