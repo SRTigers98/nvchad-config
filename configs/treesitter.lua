@@ -28,6 +28,7 @@ M.opts = {
     "css",
     "svelte",
     "vue",
+    "heex",
     -- tools
     "gomod",
     "gosum",
