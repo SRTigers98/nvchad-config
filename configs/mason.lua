@@ -42,6 +42,8 @@ M.opts = {
     "docker-compose-language-service",
     -- TOML
     "taplo",
+    -- Rust
+    "rust-analyzer",
   },
 }
 

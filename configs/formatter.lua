@@ -50,6 +50,9 @@ local filetypes = {
   toml = {
     require("formatter.filetypes.toml").taplo,
   },
+  rust = {
+    require("formatter.filetypes.rust").rustfmt,
+  },
   ["*"] = {
     require("formatter.filetypes.any").remove_trailing_whitespace,
   },

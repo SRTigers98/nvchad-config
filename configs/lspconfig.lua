@@ -17,6 +17,7 @@ local servers = {
   "dockerls",
   "docker_compose_language_service",
   "taplo",
+  "rust_analyzer",
 }
 
 -- Generic
