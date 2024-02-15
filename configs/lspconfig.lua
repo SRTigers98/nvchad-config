@@ -9,7 +9,6 @@ local servers = {
   "gopls",
   "texlab",
   "zls",
-  "html",
   "cssls",
   "htmx",
   "autotools_ls",
@@ -37,6 +36,13 @@ lspconfig.tsserver.setup {
       disableSuggestions = true,
     },
   },
+}
+
+-- HTML
+lspconfig.html.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = { "html", "templ", "heex" },
 }
 
 -- Vue
