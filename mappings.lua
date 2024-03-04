@@ -19,6 +19,7 @@ M.yaml = {
 -- Git
 M.git = {
   n = {
+    ["<leader>gg"] = { "<cmd>LazyGit<CR>", "LazyGit" },
     ["<leader>gs"] = { "<cmd>AdvancedGitSearch<CR>", "Git Advanced Search" },
   },
 }

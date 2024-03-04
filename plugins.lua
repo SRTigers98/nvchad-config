@@ -57,8 +57,18 @@ local plugins = {
     event = "VeryLazy",
   },
   {
-    "tpope/vim-fugitive",
+    "kdheepak/lazygit.nvim",
+    cmd = {
+      "LazyGit",
+      "LazyGitConfig",
+      "LazyGitCurrentFile",
+      "LazyGitFilter",
+      "LazyGitFilterCurrentFile",
+    },
     event = "VeryLazy",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
   },
   {
     "aaronhallaert/advanced-git-search.nvim",

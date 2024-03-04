@@ -18,9 +18,10 @@ Some software may be required for mason to install the required tools.
 
 ### Additional software
 
-| Plugin                   | Software                                         |
-| ------------------------ | ------------------------------------------------ |
-| advanced-git-search.nvim | [ripgrep](https://github.com/BurntSushi/ripgrep) |
+| Plugin                   | Software                                            |
+| ------------------------ | --------------------------------------------------- |
+| lazygit.nvim             | [lazygit](https://github.com/jesseduffield/lazygit) |
+| advanced-git-search.nvim | [ripgrep](https://github.com/BurntSushi/ripgrep)    |
 
 ## Update
 
