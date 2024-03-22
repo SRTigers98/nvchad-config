@@ -9,9 +9,9 @@ M.ui = {
   },
 }
 
-M.plugins = "custom.plugins"
+-- M.plugins = "plugins"
 
-M.mappings = require "custom.mappings"
+-- M.mappings = require "mappings"
 
 -- Overwrite disabled inbuilt plugins
 M.lazy_nvim = {

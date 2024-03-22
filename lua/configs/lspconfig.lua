@@ -1,5 +1,7 @@
-local configs = require "plugins.configs.lspconfig"
+local configs = require "nvchad.configs.lspconfig"
+
 local on_attach = configs.on_attach
+local on_init = configs.on_init
 local capabilities = configs.capabilities
 
 local lspconfig = require "lspconfig"
@@ -23,6 +25,7 @@ local servers = {
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
     on_attach = on_attach,
+    on_init = on_init,
     capabilities = capabilities,
   }
 end
@@ -30,6 +33,7 @@ end
 -- TypeScript
 lspconfig.tsserver.setup {
   on_attach = on_attach,
+  on_init = on_init,
   capabilities = capabilities,
   init_options = {
     preferences = {
@@ -41,6 +45,7 @@ lspconfig.tsserver.setup {
 -- HTML
 lspconfig.html.setup {
   on_attach = on_attach,
+  on_init = on_init,
   capabilities = capabilities,
   filetypes = { "html", "templ", "heex" },
 }
@@ -48,6 +53,7 @@ lspconfig.html.setup {
 -- Vue
 lspconfig.volar.setup {
   on_attach = on_attach,
+  on_init = on_init,
   capabilities = capabilities,
   filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue", "json" },
 }
@@ -55,6 +61,7 @@ lspconfig.volar.setup {
 -- Elixir
 lspconfig.elixirls.setup {
   on_attach = on_attach,
+  on_init = on_init,
   capabilities = capabilities,
   cmd = { vim.fn.expand "$HOME/.local/share/nvim/mason/packages/elixir-ls/language_server.sh" },
 }
@@ -62,17 +69,19 @@ lspconfig.elixirls.setup {
 -- Helm
 lspconfig.helm_ls.setup {
   on_attach = on_attach,
+  on_init = on_init,
   capabilities = capabilities,
   filetypes = { "helm", "helm.yaml" },
 }
 
 -- YAML
-local yaml_config = require "custom.configs.yaml"
+local yaml_config = require "configs.yaml"
 lspconfig.yamlls.setup(yaml_config)
 
 -- JSON
 lspconfig.jsonls.setup {
   on_attach = on_attach,
+  on_init = on_init,
   capabilities = capabilities,
   settings = {
     json = {

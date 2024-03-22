@@ -4,12 +4,13 @@
 
 ## Installation
 
-Install the NvChad configuration by following their [installation guide](https://nvchad.com/docs/quickstart/install).
-Then clone this repository in the _custom_ folder:
+Install the NvChad configuration by using the following command:
 
 ```bash
-git clone https://github.com/SRTigers98/nvchad-config ~/.config/nvim/lua/custom --depth 1
+git clone https://github.com/SRTigers98/nvchad-config ~/.config/nvim --depth 1
 ```
+
+Then follow the next steps in the [installation guide](https://nvchad.com/docs/quickstart/install).
 
 ## Required software
 

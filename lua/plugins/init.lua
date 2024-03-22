@@ -2,32 +2,32 @@ local plugins = {
   -- Basic
   {
     "nvim-treesitter/nvim-treesitter",
-    opts = require("custom.configs.treesitter").opts,
+    opts = require("configs.treesitter").opts,
   },
   {
     "williamboman/mason.nvim",
-    opts = require("custom.configs.mason").opts,
+    opts = require("configs.mason").opts,
   },
   -- Language Support
   {
     "neovim/nvim-lspconfig",
     config = function()
-      require "plugins.configs.lspconfig"
-      require "custom.configs.lspconfig"
+      require("nvchad.configs.lspconfig").defaults()
+      require "configs.lspconfig"
     end,
   },
   {
     "mhartington/formatter.nvim",
     event = "VeryLazy",
     config = function()
-      require "custom.configs.formatter"
+      require "configs.formatter"
     end,
   },
   {
     "mfussenegger/nvim-lint",
     event = "VeryLazy",
     config = function()
-      require "custom.configs.lint"
+      require "configs.lint"
     end,
   },
   {
@@ -35,7 +35,6 @@ local plugins = {
     ft = "go",
     config = function(_, opts)
       require("gopher").setup(opts)
-      require("core.utils").load_mappings "gopher"
     end,
     build = function()
       vim.cmd [[silent! GoInstallDeps]]
@@ -106,7 +105,6 @@ local plugins = {
       require("glow").setup {
         height_ratio = 0.9,
       }
-      require("core.utils").load_mappings "glow"
     end,
     cmd = "Glow",
     ft = "markdown",
