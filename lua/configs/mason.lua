@@ -2,6 +2,8 @@ local M = {}
 
 M.opts = {
   ensure_installed = {
+    -- Tree Sitter
+    "tree-sitter-cli",
     -- Lua
     "lua-language-server",
     "stylua",
