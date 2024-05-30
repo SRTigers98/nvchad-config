@@ -20,6 +20,7 @@ M.opts = {
     "go",
     "zig",
     "javascript",
+    "jsdoc",
     "typescript",
     "elixir",
     "rust",
@@ -38,12 +39,17 @@ M.opts = {
     "bash",
     -- vcs
     "gitignore",
+    "gitattributes",
+    "gitcommit",
+    "git_config",
+    "git_rebase",
     -- database
     "sql",
     -- gRPC
     "proto",
     -- config
     "ssh_config",
+    "gpg",
   },
 }
 
