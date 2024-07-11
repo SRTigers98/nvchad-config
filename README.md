@@ -27,3 +27,10 @@ Some software may be required for mason to install the required tools.
 ## Update
 
 To update the configuration just use the **git pull** command to update the repository.
+
+## Troubleshooting
+
+> Installation with `:MasonInstallAll` fails
+
+Read the logs and check if you are missing a tool to install a package.
+If not, try removing the folder `${HOME}/.local/share/nvim/` and run `:MasonInstallAll` again.
