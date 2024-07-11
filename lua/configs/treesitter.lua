@@ -13,6 +13,7 @@ M.opts = {
     "yaml",
     "toml",
     "csv",
+    "kdl",
     -- tex
     "bibtex",
     "latex",
