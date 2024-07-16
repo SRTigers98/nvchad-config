@@ -21,6 +21,7 @@ M.opts = {
     "json-lsp",
     -- Go
     "gopls",
+    "goimports",
     -- Zig
     "zls",
     -- JavaScript & TypeScript
