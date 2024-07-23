@@ -17,6 +17,8 @@ M.opts = {
     -- tex
     "bibtex",
     "latex",
+    -- typst
+    "typst",
     -- programming
     "go",
     "zig",

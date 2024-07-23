@@ -49,6 +49,8 @@ M.opts = {
     "rust-analyzer",
     -- Markdown
     "markdownlint",
+    -- Typst
+    "typst-lsp",
   },
 }
 
