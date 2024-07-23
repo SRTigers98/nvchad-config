@@ -47,6 +47,8 @@ M.opts = {
     "taplo",
     -- Rust
     "rust-analyzer",
+    -- Markdown
+    "markdownlint",
   },
 }
 
