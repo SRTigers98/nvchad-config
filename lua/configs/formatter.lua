@@ -1,5 +1,3 @@
-local util = require "formatter.util"
-
 local filetypes = {
   go = {
     require("formatter.filetypes.go").gofmt,
@@ -26,7 +24,13 @@ local filetypes = {
   javascript = {
     require("formatter.filetypes.javascript").biome,
   },
+  javascriptreact = {
+    require("formatter.filetypes.javascript").biome,
+  },
   typescript = {
+    require("formatter.filetypes.typescript").biome,
+  },
+  typescriptreact = {
     require("formatter.filetypes.typescript").biome,
   },
   json = {
@@ -62,7 +66,13 @@ if vim.fs.find { ".prettierrc", ".prettierrc.yaml" } then
   filetypes.javascript = {
     require("formatter.filetypes.javascript").prettier,
   }
+  filetypes.javascriptreact = {
+    require("formatter.filetypes.javascript").prettier,
+  }
   filetypes.typescript = {
+    require("formatter.filetypes.typescript").prettier,
+  }
+  filetypes.typescriptreact = {
     require("formatter.filetypes.typescript").prettier,
   }
   filetypes.json = {
