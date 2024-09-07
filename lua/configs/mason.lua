@@ -22,6 +22,7 @@ M.opts = {
     -- Go
     "gopls",
     "goimports",
+    "gomodifytags",
     -- Zig
     "zls",
     -- JavaScript & TypeScript
