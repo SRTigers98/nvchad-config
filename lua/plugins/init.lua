@@ -4,10 +4,6 @@ local plugins = {
     "nvim-treesitter/nvim-treesitter",
     opts = require("configs.treesitter").opts,
   },
-  {
-    "williamboman/mason.nvim",
-    opts = require("configs.mason").opts,
-  },
   -- Language Support
   {
     "neovim/nvim-lspconfig",
@@ -17,10 +13,10 @@ local plugins = {
     end,
   },
   {
-    "mhartington/formatter.nvim",
+    "stevearc/conform.nvim",
     event = "VeryLazy",
     config = function()
-      require "configs.formatter"
+      require "configs.conform"
     end,
   },
   {
