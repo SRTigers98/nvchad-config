@@ -12,4 +12,8 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local lazy = require "lazy"
-lazy.setup "luna.plugins"
+lazy.setup("luna.plugins", {
+  change_detection = {
+    notify = false,
+  },
+})
