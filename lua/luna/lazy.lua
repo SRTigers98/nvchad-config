@@ -12,7 +12,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local lazy = require "lazy"
-lazy.setup("luna.plugins", {
+lazy.setup({ { import = "luna.plugins" }, { import = "luna.plugins.lsp" } }, {
   checker = {
     enabled = true,
     notify = false,

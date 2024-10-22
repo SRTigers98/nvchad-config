@@ -12,10 +12,9 @@ local languages = {
   "toml",
   "csv",
   "kdl",
-  -- tex
+  -- typesetting
   "bibtex",
   "latex",
-  -- typst
   "typst",
   -- programming
   "go",
