@@ -28,7 +28,9 @@ local lsp_servers = {
   "bashls",
 }
 
-local formatters = {
+local tools = {
+  -- formatters
+  -- see conform plugin
   "stylua",
   "biome",
   "prettier",
@@ -36,6 +38,12 @@ local formatters = {
   "latexindent",
   "goimports",
   "shfmt",
+  -- linters
+  -- see nvim-lint plugin
+  "markdownlint",
+  "yamllint",
+  "biome",
+  "shellcheck",
 }
 
 return {
@@ -65,7 +73,7 @@ return {
     }
 
     mason_tool_installer.setup {
-      ensure_installed = formatters,
+      ensure_installed = tools,
     }
   end,
 }
