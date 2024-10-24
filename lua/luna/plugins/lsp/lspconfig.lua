@@ -5,6 +5,7 @@ return {
     "hrsh7th/cmp-nvim-lsp",
     { "antosha417/nvim-lsp-file-operations", config = true },
     { "folke/neodev.nvim", opts = {} },
+    "b0o/schemastore.nvim",
   },
   config = function()
     -- import lspconfig plugin
@@ -112,7 +113,17 @@ return {
           cmd = { vim.fn.expand "$HOME/.local/share/nvim/mason/packages/elixir-ls/language_server.sh" },
         }
       end,
-      -- TODO: add yaml and json configuration
+      ["jsonls"] = function()
+        lspconfig["jsonls"].setup {
+          capabilities = capabilities,
+          settings = {
+            json = {
+              schemas = require("schemastore").json.schemas(),
+              validate = { enable = true },
+            },
+          },
+        }
+      end,
     }
   end,
 }
