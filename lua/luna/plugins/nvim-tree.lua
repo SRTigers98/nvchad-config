@@ -49,11 +49,18 @@ return {
     }
 
     -- set keymaps
-    local keymap = vim.keymap -- for conciseness
+    local map = vim.keymap.set
 
-    keymap.set("n", "<leader>e", "<cmd>NvimTreeFindFile<CR>", { desc = "Open file explorer on current file" })
-    keymap.set("n", "<leader>te", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle file explorer" })
-    keymap.set("n", "<leader>tc", "<cmd>NvimTreeCollapse<CR>", { desc = "Collapse file explorer" })
-    keymap.set("n", "<leader>tr", "<cmd>NvimTreeRefresh<CR>", { desc = "Refresh file explorer" })
+    map("n", "<leader>e", function()
+      local view = require "nvim-tree.view"
+      if view.is_visible() then
+        vim.fn.execute "NvimTreeClose"
+      else
+        vim.fn.execute "NvimTreeFindFile"
+      end
+    end, { desc = "Toggle file explorer on current file" })
+    map("n", "<leader>te", "<cmd>NvimTreeFindFile", { desc = "Find file in explorer" })
+    map("n", "<leader>tc", "<cmd>NvimTreeCollapse<CR>", { desc = "Collapse file explorer" })
+    map("n", "<leader>tr", "<cmd>NvimTreeRefresh<CR>", { desc = "Refresh file explorer" })
   end,
 }
